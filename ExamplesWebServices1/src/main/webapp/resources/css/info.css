@@ -1,0 +1,66 @@
+@CHARSET "ISO-8859-1";
+<!-- model view controller
+view: front end- jsp
+controller: will be handling jsp requests and also possible to validate the form fields, on validation we can also assign errorvariables which can be used in jsp page returned to from controller.
+1. Created Home Controller.java
+It is the file where you map the page requests.
+
+*From register page i want to access the home page
+ In the register.jsp, form method action value is <=>  "value="/home1"" in controller  i.e <form action="home1"> <=> requestmapping(value="/home1".....)
+i.e request mapping.
+
+
+ex:@RequestMapping(value = "/home1", method = RequestMethod.POST)
+	public String openhomeAgain(@RequestParam("name") String uname,@RequestParam("email") String email,@RequestParam("email") String email,@RequestParam("email") String email) {
+		return "home";
+	}
+->here a request with value /home1 at the end, should be handled as said in the method openhomepageagain.
+->this method request should match with the form details(method type) given in .jsp file 
+->we can pass parameters to the method which can be evaluated. i.e passing information to server from frontend
+->on evaluating the paramters we can return the required page 
+
+* on using this mapping when we move from register to home(/any page given in return), the url will display the value "home1" no more "home""
+
+* on changing the method to POST, the info given to the server through fields is not displayed on the url ending on moving from one page to other.
+
+* Added Model(predefined class) object in the method parameter to assign a string to error variable on empty fields and pass message from controller to jsp(frontend). 
+
+/////// 3 ways of button creation
+1. <input type="button" class="btn btn-info" value="Input button">
+2. <button type="button"/type="submit" class="btn btn-info">Submit</button> 
+3. <a href="#" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+or class="btn btn-default"
+
+/////// We can add javascript by: <script type="text/javascript" src="resources/js/Register.js"></script>
+With button click or onSubmit: i.e onclick attribute on button click : <button type="submit" class="btn btn-default" onclick="btnClickedFunction()">Submit</button> 
+onSubmit="return ValidateForm()" attribute in form tag
+
+
+2. 3 JSP pages- Home, Login, Register
+
+Every JSP page has a corresponding .css page(styling details), .js (java script)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
