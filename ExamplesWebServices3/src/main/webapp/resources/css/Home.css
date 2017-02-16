@@ -1,0 +1,83 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	position: relative;
+}
+
+.affix {
+	top: 0;
+	width: 100%;
+	z-index: 9999 !important;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+	position: relative;
+	top: 50px;
+}
+
+div.container-fluid {
+	border: 1px solid gray;
+}
+
+div.jumbotron {
+	background-image: url("../images/deep.png");
+}
+
+div.jumbotron1 {
+	background-image: url("../images/blue1.jpg");
+}
+
+header {
+	padding: 0em;
+	color: white;
+	background-color: black;
+	text-align: center;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+article {
+	margin-left: 10px;
+	padding: 1em;
+	overflow: hidden;
+}
+
+.dropdown-menu {
+	font-family: fantasy;
+}
+
+#About {
+	padding-top: 50px;
+	height: 500px;
+	color: white;
+	background-image: url("../images/swirl_pattern.jpg");
+}
+
+#Register {
+	padding-top: 50px;
+	height: 500px;
+	color: darkblue;
+	background-color: gainsboro;
+}
+
+#Login {
+	padding-top: 50px;
+	height: 500px;
+	color: darkblue;
+	background-color: gainsboro;
+}
+
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
